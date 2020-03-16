@@ -3,11 +3,11 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <title>Education</title>
   <meta content="Aula connects students, staff and educators to create active and engaging educational experiences."
     name="description">
@@ -25,38 +25,7 @@
 </head>
 
 <body class="body">
-<!--
-  <div class="contact section-8">
-    <div class="wrapper center w-container">
-      <div data-ix="fade-up-1" class="contact-window-2 popup w-form">
-        <form id="wf-form-Contact-Form" name="wf-form-Contact-Form" data-name="Contact Form" method="post"
-          action="MAILTO:anna.muzykina83@gmail.com"
-          class="contact-form-3">
-          <div class="div-block-23"><img src="images/1f680.png" alt="" class="image-16">
-            <h1 class="heading-careers learnmore blue popup">Book a demo</h1>
-            <p class="smalltext-2">Tell us how we can help your institution and we&#x27;ll be in touch shortly!</p>
-          </div><input type="text" id="NAME-5" name="NAME-5" data-name="NAME 5" placeholder="Name" maxlength="256"
-            required="" class="input-2 trial-white-input w-input"><input type="email" id="Email-4" name="Email-4"
-            data-name="Email 4" placeholder="Institutional email address" maxlength="256" required=""
-            class="input-2 trial-white-input w-input"><textarea placeholder="Your message" maxlength="5000"
-            id="Message-field-3" name="Message-field-3" data-name="Message Field 3" required=""
-            class="input-2 trial-white-input w-input"></textarea><input type="submit" value="Send"
-            data-wait="Please wait..." class="basic-button form popup w-button">
-        </form>
-        <div class="form-success center w-form-done"><img src="images/aula-symbol-color.png" width="60"
-            srcset="images/aula-symbol-color-p-500.png 500w, images/aula-symbol-color-p-800.png 800w, images/aula-symbol-color-p-1080.png 1080w, images/aula-symbol-color-p-1600.png 1600w, images/aula-symbol-color.png 2048w"
-            sizes="100vw" alt="" class="image-28">
-          <div class="text-block-10"><strong>Thanks for getting in touch.<br>We&#x27;ll get back to you shortly!
-              ✌️</strong><br><br>The Aula Team</div>
-        </div>
-        <div class="form-error red w-form-fail">
-          <div class="smalltext-2">Oops! Something went wrong while submitting the form :(</div>
-        </div>
-      </div>
-    </div>
-    <div data-ix="hide-contact" class="dark-close-bg"></div>
-  </div>
--->
+
   <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease-in-out-quad"
     class="nav-section-2 w-nav">
     <div class="wrapper w-container">
@@ -84,12 +53,33 @@
             </li>
           </ul>
         </nav>
+        
          <a href="#"
-          class="basic-button large _20tm navbar navbar w-button" data-ix="show-contact">Book a demo</a>
-        <div class="menu-button w-nav-button"><img src="images/menu-icon.svg" alt="" class="image-6"></div>
+          class="basic-button large _20tm navbar navbar w-button" 
+          data-toggle="modal" data-target="#exampleModal" data-ix="show-contact">
+          Book a demo</a>
+        
       </div>
     </div>
   </div>
+<!-- MODAL WINDOW-->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialogue" 
+ aria-labelledby="exampleModal" arial-hidden="true">
+ <div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title">Modal title</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    </div>
+  </div>
+
+
+</div>
+<!-- END MODAL WINDOW-->
+
   <div class="hero-section phone">
     <div class="wrapper hero-2-cols w-container">
       <div class="hero w-clearfix">
@@ -396,6 +386,11 @@ window.cookieconsent.initialise({
     }
 </script>
 -->
+<!-- Optional JavaScript For Bootstrap 4-->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
 <!-- Jquery Library file -->
 <script src="./js/Jquery3.4.1.min.js"></script>
