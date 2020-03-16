@@ -18,6 +18,9 @@
   body {
     margin: 0;
   }
+  a:hover{
+    text-decoration: none;
+  }
   /* HTML5 display definitions
      ========================================================================== */
   /**
@@ -539,29 +542,13 @@
     background-image: none;
   }
   
-  .hero-section.phone.careers {
-    height: auto;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(hsla(0, 0%, 96.9%, 0.4)), to(hsla(0, 0%, 96.9%, 0.4))), url('../images/landingpagevisual-7-06.svg');
-    background-image: linear-gradient(180deg, hsla(0, 0%, 96.9%, 0.4), hsla(0, 0%, 96.9%, 0.4)), url('../images/landingpagevisual-7-06.svg');
-    background-position: 0px 0px, 0px 0px;
-    background-size: auto, 100%;
-    background-repeat: repeat, no-repeat;
-    background-attachment: scroll, fixed;
-  }
+
   
   .hero-section.phone.careers.blank {
     background-image: none;
   }
   
-  .hero-section.phone.careers.desktopapp {
-    padding-bottom: 80px;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(hsla(0, 0%, 100%, 0.56)), to(hsla(0, 0%, 100%, 0.56))), url('../images/landingpagevisual-7-06.svg');
-    background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0.56), hsla(0, 0%, 100%, 0.56)), url('../images/landingpagevisual-7-06.svg');
-    background-position: 0px 0px, 0px 0px;
-    background-size: auto, auto 100%;
-    background-repeat: repeat, no-repeat;
-    background-attachment: scroll, fixed;
-  }
+
   
   .hero-section.phone.platform {
     height: auto;
@@ -584,22 +571,7 @@
     color: #4280fd;
   }
   
-  .hero-section.phone.careers {
-    height: auto;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(hsla(0, 0%, 96.9%, 0.4)), to(hsla(0, 0%, 96.9%, 0.4))), url('../images/landingpagevisual-7-06.svg');
-    background-image: linear-gradient(180deg, hsla(0, 0%, 96.9%, 0.4), hsla(0, 0%, 96.9%, 0.4)), url('../images/landingpagevisual-7-06.svg');
-    background-position: 0px 0px, 0px 0px;
-    background-size: auto, 100%;
-    background-repeat: repeat, no-repeat;
-    background-attachment: scroll, fixed;
-  }
-  
-  .hero-section.phone.careers.desktopapp {
-    margin-top: 100px;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(null), to(null)), url('../images/landingpagevisual-7-06.svg');
-    background-image: linear-gradient(180deg, null, null), url('../images/landingpagevisual-7-06.svg');
-    background-size: auto, cover;
-  }
+
   
   .logo {
     position: absolute;
@@ -997,6 +969,7 @@
     text-align: center;
   }
   
+  /* =============== button ================== */
   .button {
     height: 50px;
     padding-top: 11px;
@@ -8476,7 +8449,32 @@
     margin: 10px 0px;
     background-color: transparent;
   }
+  /* ==========section-3===*/
+
   
+    .section-3{
+      background-image: url('img/bg-3.png');
+      background-repeat: no-repeat;
+      background-position: right;
+      height: 100vh;
+      width: 100%;
+      padding-top: 20px;
+        }
+      .blog-title{
+        text-align: center;
+      }
+      
+      .blog-content{
+        display: flex;
+          flex-direction: column;
+          text-align: center;
+          width: 80%;
+          margin: 3rem auto;
+          box-shadow: 0 15px 20px rgba(0,0,0,0.2)
+      }
+      
+  
+  /* ====== end section-3====*/
   .section-4 {
     margin-top: 0px;
     padding-top: 20px;
@@ -15650,41 +15648,9 @@
   .w-lightbox-noscroll {
     overflow: hidden;
   }
-  @media (min-width: 768px) {
-    .w-lightbox-content {
-      height: 96vh;
-      margin-top: 2vh;
-    }
-    .w-lightbox-view,
-    .w-lightbox-view:before {
-      height: 96vh;
-    }
-    /* .w-lightbox-content */
-    .w-lightbox-group,
-    .w-lightbox-group .w-lightbox-view,
-    .w-lightbox-group .w-lightbox-view:before {
-      height: 84vh;
-    }
-    .w-lightbox-image {
-      max-width: 96vw;
-      max-height: 96vh;
-    }
-    .w-lightbox-group .w-lightbox-image {
-      max-width: 82.3vw;
-      max-height: 84vh;
-    }
-    .w-lightbox-left,
-    .w-lightbox-right {
-      display: block;
-      opacity: .5;
-    }
-    .w-lightbox-close {
-      opacity: .8;
-    }
-    .w-lightbox-control:hover {
-      opacity: 1;
-    }
-  }
+
+
+
   .w-lightbox-inactive,
   .w-lightbox-inactive:hover {
     opacity: 0;
@@ -15834,8 +15800,6 @@
     clear: both;
   }
   .w-nav-brand {
-    position: relative;
-    float: left;
     text-decoration: none;
     color: #333333;
   }
@@ -15853,6 +15817,40 @@
   .w-nav-link.w--current {
     color: #0082f3;
   }
+ 
+  .dws-menu ul{
+    display: flex;
+  }
+  .dws-menu ul,
+  .dws-menu li{
+    list-style: none;
+  } 
+  .dws-menu li a:hover{
+    background: #7a1bbe;
+    color: white;
+  }
+
+  .dws-menu li ul{
+    position: absolute;
+    min-width: 150px;
+  }
+.li-submenu>li{
+  position: relative;
+  display: inline-block;
+  justify-content: center;
+}
+
+.li-submenu>.submenu{
+  position: absolute;
+  padding-left: 20px;
+  display: block;
+  
+}
+.submenu>li{
+  background: #7c4c4c;
+  margin-right: 10px;
+  width: 75%;
+}
   .w-nav-menu {
     position: relative;
     float: right;
@@ -15926,6 +15924,7 @@
   .w-nav[data-collapse="all"] .w-nav-button {
     display: block;
   }
+
   @media screen and (max-width: 991px) {
     .w-nav[data-collapse="medium"] .w-nav-menu {
       display: none;
@@ -15934,6 +15933,43 @@
       display: block;
     }
   }
+
+  @media (min-width: 768px) {
+    .w-lightbox-content {
+      height: 96vh;
+      margin-top: 2vh;
+    }
+    .w-lightbox-view,
+    .w-lightbox-view:before {
+      height: 96vh;
+    }
+    /* .w-lightbox-content */
+    .w-lightbox-group,
+    .w-lightbox-group .w-lightbox-view,
+    .w-lightbox-group .w-lightbox-view:before {
+      height: 84vh;
+    }
+    .w-lightbox-image {
+      max-width: 96vw;
+      max-height: 96vh;
+    }
+    .w-lightbox-group .w-lightbox-image {
+      max-width: 82.3vw;
+      max-height: 84vh;
+    }
+    .w-lightbox-left,
+    .w-lightbox-right {
+      display: block;
+      opacity: .5;
+    }
+    .w-lightbox-close {
+      opacity: .8;
+    }
+    .w-lightbox-control:hover {
+      opacity: 1;
+    }
+  }
+
   @media screen and (max-width: 767px) {
     .w-nav[data-collapse="small"] .w-nav-menu {
       display: none;
