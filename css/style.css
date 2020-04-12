@@ -192,6 +192,7 @@
     font-family: monospace, monospace;
     font-size: 1em;
   }
+  
   /* Forms
      ========================================================================== */
   /**
@@ -6508,7 +6509,7 @@
     width: auto;
     margin-top: 0px;
     margin-right: 20px;
-    padding: 16px 20px;
+    padding: 16px 60px;
     background-color: #fff;
     box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
     -webkit-transition: box-shadow 200ms cubic-bezier(.645, .045, .355, 1);
@@ -6546,7 +6547,6 @@
   .basic-button.large._20tm {
     margin-top: 0px;
     margin-right: 0px;
-    padding-right: 20px;
     -webkit-box-ordinal-group: 1;
     -webkit-order: 0;
     -ms-flex-order: 0;
@@ -7877,10 +7877,7 @@
     display: flex;
   }
   
-  .slider {
-    background-color: transparent;
-  }
-  
+
   .icon {
     color: #a6b4cc;
   }
@@ -7895,10 +7892,7 @@
     margin-right: auto;
     margin-left: auto;
   }
-  
-  .slide-2 {
-    background-color: #fff;
-  }
+
   
   .slide-3 {
     background-color: #7e39e6;
@@ -7921,7 +7915,7 @@
     margin-right: -10px;
     border: 4px solid #fff;
     border-radius: 50%;
-    background-image: url('../images/5b8cd796012ec3a53bc7664a_gary_pritchard.jpg');
+    background-image: url('../img/people-happy.jpeg');
     background-position: 50% 50%;
     background-size: cover;
     box-shadow: 0 7px 50px 0 rgba(0, 0, 0, 0.12);
@@ -7930,28 +7924,28 @@
   .testimonials-img.clare-mackie {
     margin-right: 0px;
     border-width: 8px;
-    background-image: url('../images/5bd76e9f2d9c8184a73e75d0_Clare-Mackie-photo_small.jpg');
+    background-image: url('../img/people-happy.jpeg');
   }
   
   .testimonials-img.simon-launder {
     border-width: 8px;
-    background-image: url('../images/5bd76e9da9c0d5817e17b4e3_Simon-Launder-photo-Coventry.jpg');
+    background-image: url('../img/people-happy.jpeg');
   }
   
   .testimonials-img.emily-stevens {
     border-width: 8px;
-    background-image: url('../images/5bd76e9e592e27816b8f169c_Emily-Stevens-photo-Ravensbourne_small.jpg');
+    background-image: url('../img/people-happy.jpeg');
   }
   
   .testimonials-img.josh-fortune {
     border-width: 8px;
-    background-image: url('../images/Josh-Fortune-photo-low-res-screenshot-Ravensbourne-copy.jpg');
+    background-image: url('../img/people-happy.jpeg');
   }
   
   .testimonials-img.james-ward {
     margin-right: 0px;
     border-width: 8px;
-    background-image: url('../images/James-Ward-Ravensbourne-photo.jpg');
+    background-image: url('../img/people-happy.jpeg');
   }
   
   .flex {
@@ -8325,7 +8319,7 @@
       background-image: url('img/bg-3.png');
       background-repeat: no-repeat;
       background-position: right;
-      height: 100vh;
+      height: 75vh;
       width: 100%;
       padding-top: 20px;
         }
@@ -10122,6 +10116,11 @@
     }
     .basic-button.large._20tm.navbar {
       display: none;
+    }
+    basic-button.large._20tm{
+      margin-bottom: 10px;
+      border-radius: 10px;
+      box-shadow: black;
     }
     .basic-button.menu {
       display: none;
@@ -13898,14 +13897,15 @@
   }
   .w-button {
     display: inline-block;
-    padding: 9px 15px;
+    padding: 9px 25px;
     background-color: #3898EC;
     color: white;
-    border: 0;
     line-height: inherit;
     text-decoration: none;
     cursor: pointer;
-    border-radius: 0;
+    border-radius: 5px;
+    box-shadow: black;
+    margin-bottom: 10px;
   }
   input.w-button {
     -webkit-appearance: button;
@@ -15420,6 +15420,14 @@
     position: absolute;
     min-width: 150px;
   }
+  .submenu>li{
+    display: none;
+  }
+  .submenu>li:hover{
+    display: block;
+    background: grey;
+  }
+
 .li-submenu>li{
   position: relative;
   display: inline-block;
@@ -15437,6 +15445,7 @@
   margin-right: 10px;
   width: 75%;
 }
+
   .w-nav-menu {
     position: relative;
     float: right;
