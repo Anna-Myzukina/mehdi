@@ -15421,9 +15421,13 @@
     min-width: 150px;
   }
   .submenu>li{
+    visibility: hidden;
     display: none;
+    opacity: 0;
   }
-  .submenu>li:hover{
+  .submenu li ul:hover{
+    visibility: visible;
+    opacity: 1;
     display: block;
     background: grey;
   }
